@@ -1,0 +1,307 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+}
+
+/* Navigation bar */
+.nav {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+}
+
+
+.navbar>ul>img {
+    height: 50px;
+    border-radius: 50%;
+    margin: 1%;
+    float: left;
+    width: 5%;
+}
+
+.list {
+    /* margin-left: 8%; */
+    padding: 1%;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 210px;
+    display: flex;
+}
+
+header>.navbar>ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+/* **********image*********** */
+
+.image {
+    height: 400px;
+    width: 100%;
+    /* margin-top: 70px; */
+    display: flexbox;
+}
+
+
+
+.image>span>img {
+    display: flex;
+    opacity: 55%;
+    height: 500px;
+    width: 100%;
+
+}
+
+.image>span>h1 {
+    display: flex;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 300px;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0 10px 0 20px;
+}
+
+.image>span>h3 {
+    display: flex;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 400px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 10px 0 20px;
+}
+
+#btn {
+    text-align: center;
+    background-color: purple;
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin-top: -2%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 13%;
+
+}
+
+#btn:hover {
+    background-color: lightcoral;
+}
+/*style of article */
+
+article > h1 
+{
+    margin-top: 40%;
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+
+
+/* style of  section course */
+
+section.course 
+{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section.course > div  
+{
+    height: 400px;
+    width: 250px;
+    background-color: blueviolet;
+    padding: 0.5%;
+}
+
+section > div > img 
+{
+    height: 200px;
+    width: 100%;
+}
+
+
+section > div > p
+{
+    padding: 4%;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+section.course > div > p::first-letter 
+{
+    font-size: 50px;
+}
+
+section.course > div > a 
+{
+    display: block;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white ;
+    
+    /*this is for hover effect*/
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+section > div > a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+
+
+section > div:last-child > a:last-child
+{
+ margin-top: 45px;
+}
+
+
+/* style of footer */
+
+
+h1
+{
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+div.content
+{
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 16%;
+    background-color: rgb(169, 56, 56);
+    border-radius: 5px;
+}
+
+
+img[src="image/one.webp"]
+{
+    height: 200px;
+    width: 200px;
+    float: left;
+
+    /* this is for image style */
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: perspective(1200px) translateZ(300px);
+}
+
+div.right-side
+{
+    float: right;
+    width: 75%;
+
+}
+
+/* style of input */
+
+input:first-child
+{
+    width: 55%;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background-color: rgb(94, 84, 84);
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    margin-left: 8%;
+}
+
+input::placeholder
+{
+    font-weight:bold;
+    margin-left: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+input:last-child
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background-color: rgb(94, 84, 84);
+    color:white;
+    cursor: pointer;
+    margin-left: 2%;
+
+
+}
+
+input[value="subscribe now"]
+{
+    font-weight: bold;
+    color:white;
+}
+
+/* style of about section*/
+
+.about
+{
+    display: flex;
+    margin-top: 40px;
+}
+
+.about > div
+{
+    width: 200px;
+}
+
+.about > .about-list > p 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+  
+}
+.about-list > li > a 
+{
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
